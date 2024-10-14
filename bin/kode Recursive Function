@@ -1,0 +1,13 @@
+int faktorial(int n) {
+  // Basis kasus: jika n == 0 atau n == 1, faktorialnya adalah 1
+  if (n <= 1) {
+    return 1;
+  }
+  // Memanggil diri sendiri (rekursi)
+  return n * faktorial(n - 1);
+}
+
+void main() {
+  int angka = 5;
+  print("Faktorial dari $angka adalah ${faktorial(angka)}");
+}
